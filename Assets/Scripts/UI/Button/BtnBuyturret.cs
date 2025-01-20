@@ -19,6 +19,7 @@ public class BtnBuyturret : TDMonoBehaviour
     {
         if (this.Notification != null) return;
         this.Notification = transform.parent.parent.Find("Notification").GetComponent<Transform>();
+        this.Notification.gameObject.SetActive(false);
         Debug.LogWarning(transform.name + ": LoadNotification", gameObject);
     }
 
@@ -38,7 +39,6 @@ public class BtnBuyturret : TDMonoBehaviour
     {
         return this.tower;
     }
-    
 
     public void BuyTurret()
     {
@@ -67,8 +67,9 @@ public class BtnBuyturret : TDMonoBehaviour
             {
                 this.tower = Instantiate(towerToBuild.turretPrefab, newPosTurret.position, Quaternion.identity);
                 newPosTurret.GetComponent<Plot>().SetTower(this.tower);
-            }
-            this.tower = null;
+				this.tower.transform.SetParent(this.windowShopCtrl.LevelManager.HolderTank);
+			}
+			this.tower = null;
         }
         
         if (windowShopCtrl != null)

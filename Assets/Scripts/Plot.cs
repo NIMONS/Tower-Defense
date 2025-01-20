@@ -10,6 +10,7 @@ public class Plot : TDMonoBehaviour
     [SerializeField] protected Transform hoderTank;
     [SerializeField] protected UICtrl uICtrl;
     [SerializeField] protected WindowShopCtrl windowShopCtrl;
+    [SerializeField] protected LevelManager levelManager;
     private Color startColor;
     private GameObject tower;
 
@@ -19,9 +20,16 @@ public class Plot : TDMonoBehaviour
         this.LoadHolderTank();
         this.LoadWindowShopCtrl();
         this.LoadUICtrl();
-    }
+        this.LoadLevelManager();
+	}
+	protected void LoadLevelManager()
+	{
+		if (this.levelManager != null) return;
+		this.levelManager = GameObject.FindObjectOfType<LevelManager>();
+		Debug.LogWarning(transform.name + ": LoadLevelManager", gameObject);
+	}
 
-    protected void LoadWindowShopCtrl()
+	protected void LoadWindowShopCtrl()
     {
         if (this.windowShopCtrl != null) return;
         this.windowShopCtrl = GameObject.FindObjectOfType<WindowShopCtrl>();

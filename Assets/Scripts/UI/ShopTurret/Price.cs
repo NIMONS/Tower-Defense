@@ -8,7 +8,8 @@ public class Price : BaseLoadTextM
     protected override void LoadTextMeshPro()
     {
         base.LoadTextMeshPro();
-        this.textMeshPro=transform.Find("CurrentCoin").GetComponent<TextMeshProUGUI>();
+        if (this.textMeshPro != null) return;
+        this.textMeshPro=transform.Find("CurrentCoin").GetComponentInChildren<TextMeshProUGUI>();
         Debug.LogWarning(transform.name + ": LoadTextMeshPro", gameObject);
     }
 

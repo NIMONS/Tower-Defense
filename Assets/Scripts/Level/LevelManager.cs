@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class LevelManager : TDMonoBehaviour
 {
+    [SerializeField] protected Transform holderTank;
+    public Transform HolderTank => holderTank;
     [SerializeField] protected Transform startPoint;
     public Transform StartPoint => startPoint;
     [SerializeField] protected Transform endPoint;
@@ -29,9 +31,29 @@ public class LevelManager : TDMonoBehaviour
         base.LoadComponents();
         this.LoadStartPoint();
         this.LoadEndPoint();
+        this.LoadHolderTank();
+        this.LoadPaths();
     }
+	protected void LoadPaths()
+	{
+		if (this.paths.Count>0) return;
+        Transform paths = GameObject.Find("Path").GetComponent<Transform>();
+        foreach(Transform path in paths)
+        {
+            if (path == this.startPoint) continue;
+            this.paths.Add(path);
+        }
+		Debug.LogWarning(transform.name + " LoadPaths", gameObject);
+	}
 
-    protected void LoadEndPoint()
+	protected void LoadHolderTank()
+	{
+		if (this.holderTank != null) return;
+		this.holderTank = transform.Find("HolderTank").GetComponent<Transform>();
+		Debug.LogWarning(transform.name + " LoadHolderTank", gameObject);
+	}
+
+	protected void LoadEndPoint()
     {
         if (this.endPoint != null) return;
         this.endPoint = GameObject.Find("EndPoint").GetComponent<Transform>();

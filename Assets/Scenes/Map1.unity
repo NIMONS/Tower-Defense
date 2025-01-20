@@ -128,11 +128,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7690973355552305565, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
   m_PrefabInstance: {fileID: 1188745298}
   m_PrefabAsset: {fileID: 0}
---- !u!212 &5231893 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-  m_PrefabInstance: {fileID: 1188745298}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &15312108
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,7 +251,7 @@ PrefabInstance:
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: sr
       value: 
-      objectReference: {fileID: 646679069}
+      objectReference: {fileID: 2056746535}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: uICtrl
       value: 
@@ -266,21 +261,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 735123368}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: wndShopCtrl
+      propertyPath: levelManager
       value: 
-      objectReference: {fileID: 602391546}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.r
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1270939459}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: windowShopCtrl
       value: 
@@ -1617,21 +1600,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 735123368}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: wndShopCtrl
+      propertyPath: levelManager
       value: 
-      objectReference: {fileID: 602391546}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.r
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1270939459}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: windowShopCtrl
       value: 
@@ -2104,7 +2075,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &313269526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2134,6 +2105,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313269525}
   m_CullTransparentMesh: 1
+--- !u!212 &317653782 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
+  m_PrefabInstance: {fileID: 1188745298}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &327224037 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7690973355552305565, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
@@ -2147,11 +2123,6 @@ SpriteRenderer:
 --- !u!4 &329758911 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7690973355552305565, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-  m_PrefabInstance: {fileID: 500669798}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &329758914 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
   m_PrefabInstance: {fileID: 500669798}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &340084015
@@ -2504,21 +2475,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 735123368}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: wndShopCtrl
+      propertyPath: levelManager
       value: 
-      objectReference: {fileID: 602391546}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.r
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1270939459}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: windowShopCtrl
       value: 
@@ -2602,11 +2561,6 @@ Transform:
 --- !u!4 &453361796 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7690973355552305565, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-  m_PrefabInstance: {fileID: 1991611588}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &453361799 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
   m_PrefabInstance: {fileID: 1991611588}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &469015149
@@ -2886,7 +2840,7 @@ PrefabInstance:
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: sr
       value: 
-      objectReference: {fileID: 329758914}
+      objectReference: {fileID: 1895519823}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: uICtrl
       value: 
@@ -2896,21 +2850,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 735123368}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: wndShopCtrl
+      propertyPath: levelManager
       value: 
-      objectReference: {fileID: 602391546}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.r
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1270939459}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: windowShopCtrl
       value: 
@@ -3050,7 +2992,7 @@ PrefabInstance:
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: sr
       value: 
-      objectReference: {fileID: 1830333711}
+      objectReference: {fileID: 2059283538}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: uICtrl
       value: 
@@ -3060,21 +3002,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 735123368}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: wndShopCtrl
+      propertyPath: levelManager
       value: 
-      objectReference: {fileID: 602391546}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.r
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1270939459}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: windowShopCtrl
       value: 
@@ -3847,6 +3777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59ef68112922b9a46b0884c8a4793d8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelManager: {fileID: 1270939459}
   btnBuyturret: {fileID: 1409883637}
   uICtrl: {fileID: 1014421644}
   savedLocation: []
@@ -4662,11 +4593,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7690973355552305565, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
   m_PrefabInstance: {fileID: 23851128}
   m_PrefabAsset: {fileID: 0}
---- !u!212 &646679069 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-  m_PrefabInstance: {fileID: 23851128}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &668741286
 GameObject:
   m_ObjectHideFlags: 0
@@ -4875,12 +4801,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735123367}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.7278605, y: 0.25254285, z: 0.20141709}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.3978605, y: -4.6479087, z: 0.1491085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1270939460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &745068660
 GameObject:
@@ -5877,7 +5803,7 @@ PrefabInstance:
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: sr
       value: 
-      objectReference: {fileID: 1411541484}
+      objectReference: {fileID: 1793984750}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: uICtrl
       value: 
@@ -5887,21 +5813,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 735123368}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: wndShopCtrl
+      propertyPath: levelManager
       value: 
-      objectReference: {fileID: 602391546}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.r
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1270939459}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: windowShopCtrl
       value: 
@@ -6392,6 +6306,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windowShop: {fileID: 602391543}
+--- !u!212 &1006195582 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
+  m_PrefabInstance: {fileID: 1991611588}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1008799152
 GameObject:
   m_ObjectHideFlags: 0
@@ -6974,7 +6893,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 80, y: 0}
+  m_AnchoredPosition: {x: 76.2, y: 0}
   m_SizeDelta: {x: 79.61, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1058645820
@@ -7060,7 +6979,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -14.192963, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7638,21 +7557,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 735123368}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: wndShopCtrl
+      propertyPath: levelManager
       value: 
-      objectReference: {fileID: 602391546}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.r
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1270939459}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: windowShopCtrl
       value: 
@@ -7880,11 +7787,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1631848086}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1180625936 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-  m_PrefabInstance: {fileID: 7680217450112281650}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1188745298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7900,7 +7802,7 @@ PrefabInstance:
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: sr
       value: 
-      objectReference: {fileID: 5231893}
+      objectReference: {fileID: 317653782}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: uICtrl
       value: 
@@ -7910,21 +7812,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 735123368}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: wndShopCtrl
+      propertyPath: levelManager
       value: 
-      objectReference: {fileID: 602391546}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.r
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1270939459}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: windowShopCtrl
       value: 
@@ -8052,11 +7942,6 @@ CanvasRenderer:
 --- !u!4 &1231949243 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7690973355552305565, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-  m_PrefabInstance: {fileID: 1451108607}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &1231949246 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
   m_PrefabInstance: {fileID: 1451108607}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1256839692
@@ -8300,6 +8185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2803ac4d0f03034ba791ad57f40d26c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holderTank: {fileID: 735123368}
   startPoint: {fileID: 25288584}
   endPoint: {fileID: 1087208198}
   paths:
@@ -8335,7 +8221,8 @@ Transform:
   m_LocalPosition: {x: -0.33, y: 4.9004517, z: 0.05230859}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 735123368}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1295923866
@@ -13073,6 +12960,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380479536}
   m_CullTransparentMesh: 1
+--- !u!212 &1401448723 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
+  m_PrefabInstance: {fileID: 1451108607}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1409883633
 GameObject:
   m_ObjectHideFlags: 0
@@ -13240,11 +13132,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7690973355552305565, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
   m_PrefabInstance: {fileID: 972128791}
   m_PrefabAsset: {fileID: 0}
---- !u!212 &1411541484 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-  m_PrefabInstance: {fileID: 972128791}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1416478726
 GameObject:
   m_ObjectHideFlags: 0
@@ -13279,7 +13166,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: 0}
+  m_AnchoredPosition: {x: 15.5, y: 0}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1416478728
@@ -13332,14 +13219,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plot
       objectReference: {fileID: 0}
-    - target: {fileID: 3452389559034222141, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: sr
       value: 
-      objectReference: {fileID: 1231949246}
+      objectReference: {fileID: 1401448723}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: uICtrl
       value: 
@@ -13349,21 +13232,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 735123368}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: wndShopCtrl
+      propertyPath: levelManager
       value: 
-      objectReference: {fileID: 602391546}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.r
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1270939459}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: windowShopCtrl
       value: 
@@ -14508,14 +14379,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1631848086}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1793984750 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
+  m_PrefabInstance: {fileID: 972128791}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1830333708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7690973355552305565, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-  m_PrefabInstance: {fileID: 510622726}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &1830333711 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
   m_PrefabInstance: {fileID: 510622726}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1846898652
@@ -14862,6 +14733,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880126003}
   m_CullTransparentMesh: 1
+--- !u!212 &1895519823 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
+  m_PrefabInstance: {fileID: 500669798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1912242981
 GameObject:
   m_ObjectHideFlags: 0
@@ -15484,7 +15360,7 @@ PrefabInstance:
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: sr
       value: 
-      objectReference: {fileID: 453361799}
+      objectReference: {fileID: 1006195582}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: uICtrl
       value: 
@@ -15494,21 +15370,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 735123368}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: wndShopCtrl
+      propertyPath: levelManager
       value: 
-      objectReference: {fileID: 602391546}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.r
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1270939459}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: windowShopCtrl
       value: 
@@ -15899,6 +15763,16 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!212 &2056746535 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
+  m_PrefabInstance: {fileID: 23851128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2059283538 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
+  m_PrefabInstance: {fileID: 510622726}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2062437444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7690973355552305565, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
@@ -16068,10 +15942,6 @@ PrefabInstance:
       value: Plot
       objectReference: {fileID: 0}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: sr
-      value: 
-      objectReference: {fileID: 1180625936}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: uICtrl
       value: 
       objectReference: {fileID: 1014421644}
@@ -16080,21 +15950,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 735123368}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: wndShopCtrl
+      propertyPath: levelManager
       value: 
-      objectReference: {fileID: 602391546}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
-      propertyPath: hoverColor.r
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1270939459}
     - target: {fileID: 5469202549958196933, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
       propertyPath: windowShopCtrl
       value: 
@@ -16153,7 +16011,6 @@ SceneRoots:
   - {fileID: 1631848086}
   - {fileID: 347634635}
   - {fileID: 999456096}
-  - {fileID: 735123368}
   - {fileID: 1014421643}
   - {fileID: 340084018}
   - {fileID: 306647383}

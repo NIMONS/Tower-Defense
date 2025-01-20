@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class WindowShopCtrl : TDMonoBehaviour
 {
-    [SerializeField] protected BtnBuyturret btnBuyturret;
+	[SerializeField] protected LevelManager levelManager;
+	public LevelManager LevelManager => levelManager;
+	[SerializeField] protected BtnBuyturret btnBuyturret;
     public BtnBuyturret BtnBuyturret=>btnBuyturret;
     [SerializeField] protected UICtrl uICtrl;
     public UICtrl UICtrl=> uICtrl;
@@ -13,6 +15,7 @@ public class WindowShopCtrl : TDMonoBehaviour
 
     private Transform posTurret;
     public Transform PosTurret => posTurret;
+    
     public void SetPosTurret(Transform posTurret)
     {
         this.posTurret = posTurret;
@@ -34,9 +37,16 @@ public class WindowShopCtrl : TDMonoBehaviour
         base.LoadComponents();
         this.LoadBtnBuyTurrret();
         this.LoadUICtrl();
-    }
+        this.LoadLevelManager();
+	}
+	protected void LoadLevelManager()
+	{
+		if (this.levelManager != null) return;
+        this.levelManager = GameObject.FindObjectOfType<LevelManager>();
+		Debug.LogWarning(transform.name + ": LoadLevelManager", gameObject);
+	}
 
-    protected void LoadUICtrl()
+	protected void LoadUICtrl()
     {
         if (this.uICtrl != null) return;
         this.uICtrl = transform.parent.GetComponent<UICtrl>();
