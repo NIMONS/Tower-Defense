@@ -6,13 +6,15 @@ using UnityEngine;
 public class Tower
 {
     public string nameTurret;
+    public int level;
     public int costBuy;
     public int costSell;
 	public GameObject turretPrefab;
 
-    public Tower(string name, int cost, int costSell ,GameObject prefab)
+    public Tower(string name, int level ,int cost, int costSell ,GameObject prefab)
     {
         this.nameTurret = name;
+        this.level = level;
         this.costBuy = cost;
         this.costSell = costSell;
         this.turretPrefab = prefab;

@@ -3995,6 +3995,7 @@ MonoBehaviour:
   tower: {fileID: 0}
   towerObj:
     nameTurret: 
+    level: 0
     costBuy: 0
     costSell: 0
     turretPrefab: {fileID: 0}
@@ -4461,6 +4462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMeshProUGUI: {fileID: 1926081397}
+  updateAndSellCtrl: {fileID: 609400042}
 --- !u!1 &646267427
 GameObject:
   m_ObjectHideFlags: 0
@@ -8176,10 +8178,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towers:
   - nameTurret: Turret Lv1
+    level: 1
     costBuy: 100
     costSell: 50
     turretPrefab: {fileID: 6184509622921191962, guid: 340cc1dbbddaec74483c476bcadaa013, type: 3}
   - nameTurret: Turret Lv2
+    level: 2
     costBuy: 150
     costSell: 100
     turretPrefab: {fileID: 6184509622921191962, guid: 72adcc7b31f63644891a378c229f7357, type: 3}
@@ -14708,6 +14712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1880126004}
   - component: {fileID: 1880126005}
+  - component: {fileID: 1880126006}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -14744,6 +14749,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880126003}
   m_CullTransparentMesh: 1
+--- !u!114 &1880126006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880126003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdcfa3b32901864f8fc6d3a13ba50d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1945428832}
+  updateAndSellCtrl: {fileID: 609400042}
 --- !u!212 &1895519823 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 6299441359953942820, guid: c7544a5eeab9d3e43823896b8ab43dcf, type: 3}
