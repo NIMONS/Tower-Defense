@@ -3654,8 +3654,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BtnCloseShopPanel, Assembly-CSharp
+      - m_Target: {fileID: 587528290}
+        m_TargetAssemblyTypeName: BtnCloseUpgradeAndSell, Assembly-CSharp
         m_MethodName: CloseShopPanel
         m_Mode: 1
         m_Arguments:
@@ -3716,6 +3716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3cd630544e676e468db576074c7945e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  windowShop: {fileID: 609400040}
   windowUpgradeAndSell: {fileID: 609400042}
 --- !u!1 &602391542
 GameObject:
@@ -3987,10 +3988,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c60b6b4050e3af041b3bbd3e75e16027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uICtrl: {fileID: 1014421644}
   btnUpgrade: {fileID: 632137443}
   btnSell: {fileID: 1860694359}
   textCurrentLvTurret: {fileID: 642872341}
   tower: {fileID: 0}
+  towerObj:
+    nameTurret: 
+    costBuy: 0
+    costSell: 0
+    turretPrefab: {fileID: 0}
 --- !u!1 &624620611
 GameObject:
   m_ObjectHideFlags: 0
@@ -6515,6 +6522,7 @@ MonoBehaviour:
   enemies: {fileID: 863694970}
   updateAndSellCtrl: {fileID: 609400042}
   playerUI: {fileID: 1028056698}
+  levelManager: {fileID: 1270939459}
 --- !u!1 &1021874589
 GameObject:
   m_ObjectHideFlags: 0
@@ -8168,10 +8176,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towers:
   - nameTurret: Turret Lv1
-    cost: 100
+    costBuy: 100
+    costSell: 50
     turretPrefab: {fileID: 6184509622921191962, guid: 340cc1dbbddaec74483c476bcadaa013, type: 3}
   - nameTurret: Turret Lv2
-    cost: 150
+    costBuy: 150
+    costSell: 100
     turretPrefab: {fileID: 6184509622921191962, guid: 72adcc7b31f63644891a378c229f7357, type: 3}
 --- !u!114 &1270939459
 MonoBehaviour:
@@ -14518,6 +14528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Notification: {fileID: 46092662}
+  updateAndSellCtrl: {fileID: 609400042}
 --- !u!114 &1860694360
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,8 +13,10 @@ public class Plot : TDMonoBehaviour
     [SerializeField] protected LevelManager levelManager;
     private Color startColor;
     private GameObject tower;
+	private Tower towerObj;
 
-    protected override void LoadComponents()
+
+	protected override void LoadComponents()
     {
         base.LoadComponents();
         this.LoadHolderTank();
@@ -70,7 +72,7 @@ public class Plot : TDMonoBehaviour
         if (this.tower != null)
         {
             this.uICtrl.UpdateAndSellCtrl.gameObject.SetActive(true);
-            this.uICtrl.UpdateAndSellCtrl.SetTower(tower);
+            this.uICtrl.UpdateAndSellCtrl.SetTower(this.towerObj, this.tower);
         }
 
 
@@ -82,9 +84,10 @@ public class Plot : TDMonoBehaviour
         }
     }
 
-    public void SetTower(GameObject _tower)
+    public void SetTower(GameObject _tower, Tower tower)
     {
         this.tower = _tower;
+        this.towerObj = tower;
     }
 
     public GameObject GetTower()

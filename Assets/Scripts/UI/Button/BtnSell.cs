@@ -6,6 +6,7 @@ public class BtnSell : TDMonoBehaviour
 {
     [SerializeField] protected Transform Notification;
     [SerializeField] protected UpdateAndSellCtrl updateAndSellCtrl;
+    private Tower towerObj;
     private GameObject tower;
 
     protected override void LoadComponents()
@@ -38,8 +39,17 @@ public class BtnSell : TDMonoBehaviour
 
     protected void GetInfoTower()
     {
-        this.tower = this.updateAndSellCtrl.Tower;
-		Debug.Log("infor tower: " + tower);
+        this.towerObj = this.updateAndSellCtrl.TowerObj;
 
+        this.updateAndSellCtrl.UICtrl.LevelManager.currency+=this.towerObj.costSell;
+
+        Transform posTurret = this.updateAndSellCtrl.UICtrl.WindowShopCtrl.GetPosTurret();
+        Plot currenPosTurret = posTurret.GetComponent<Plot>();
+        currenPosTurret.SetTower(null, null);
+
+        Destroy(this.updateAndSellCtrl.Tower);
+		this.updateAndSellCtrl.SetTower(null, null);
+
+		this.updateAndSellCtrl.gameObject.SetActive(false);
 	}
 }

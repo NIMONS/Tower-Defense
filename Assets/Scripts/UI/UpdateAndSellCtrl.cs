@@ -5,13 +5,18 @@ using UnityEngine;
 public class UpdateAndSellCtrl : TDMonoBehaviour
 {
     [Header("References")]
+    [SerializeField] protected UICtrl uICtrl;
+    public UICtrl UICtrl => uICtrl;
     [SerializeField] protected BtnUpgrade btnUpgrade;
     [SerializeField] protected BtnSell btnSell;
     [SerializeField] protected TextCurrentLvTurret textCurrentLvTurret;
     [SerializeField] protected GameObject tower;
     public GameObject Tower => tower;
+    [SerializeField] protected Tower towerObj;
+	public Tower TowerObj => towerObj;
 
-    protected override void Start()
+
+	protected override void Start()
     {
         base.Start();
         transform.gameObject.SetActive(false);
@@ -23,9 +28,16 @@ public class UpdateAndSellCtrl : TDMonoBehaviour
         this.LoadBtnUpgrade();
         this.LoadBtnSell();
         this.LoadTextCurrentLvTurret();
-    }
+        this.LoadUICtrl();
+	}
+	protected void LoadUICtrl()
+	{
+		if (this.uICtrl != null) return;
+		this.uICtrl = transform.parent.GetComponent<UICtrl>();
+		Debug.LogWarning(transform.name + ": LoadUICtrl", gameObject);
+	}
 
-    protected void LoadTextCurrentLvTurret()
+	protected void LoadTextCurrentLvTurret()
     {
         if (this.textCurrentLvTurret != null) return;
         this.textCurrentLvTurret = transform.Find("UpdateAndSell-Image").GetComponentInChildren<TextCurrentLvTurret>();
@@ -46,8 +58,9 @@ public class UpdateAndSellCtrl : TDMonoBehaviour
         Debug.LogWarning(transform.name + ": LoadBtnUpgrade", gameObject);
     }
 
-    public void SetTower(GameObject tower)
+    public void SetTower(Tower towerObj, GameObject tower)
     {
         this.tower = tower;
+        this.towerObj = towerObj;
     }
 }

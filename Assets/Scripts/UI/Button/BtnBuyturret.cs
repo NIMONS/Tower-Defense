@@ -8,7 +8,8 @@ public class BtnBuyturret : TDMonoBehaviour
     [SerializeField] protected Transform Notification;
     private GameObject tower;
 
-    protected override void LoadComponents()
+
+	protected override void LoadComponents()
     {
         base.LoadComponents();
         this.LoadWindowShopCtrl();
@@ -47,13 +48,13 @@ public class BtnBuyturret : TDMonoBehaviour
 
         int currency = LevelManager.Instance.currency;
 
-        if (towerToBuild.cost > currency)
+        if (towerToBuild.costBuy > currency)
         {
             this.Notification.gameObject.SetActive(true);
             return;
         }
 
-        LevelManager.Instance.SpendCurrency(towerToBuild.cost);
+        LevelManager.Instance.SpendCurrency(towerToBuild.costBuy);
 
         //vị trí đặt pháo
         Transform newPosTurret = this.windowShopCtrl.GetPosTurret();
@@ -66,7 +67,7 @@ public class BtnBuyturret : TDMonoBehaviour
             if (this.tower == null)
             {
                 this.tower = Instantiate(towerToBuild.turretPrefab, newPosTurret.position, Quaternion.identity);
-                newPosTurret.GetComponent<Plot>().SetTower(this.tower);
+                newPosTurret.GetComponent<Plot>().SetTower(this.tower, towerToBuild);
 				this.tower.transform.SetParent(this.windowShopCtrl.LevelManager.HolderTank);
 			}
 			this.tower = null;

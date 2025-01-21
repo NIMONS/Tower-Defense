@@ -23,7 +23,7 @@ public class BtnCloseUpgradeAndSell : BtnCloseShopPanel
 	{
 		base.CloseShopPanel();
 		//Debug.Log("Close Shop");
-		this.windowUpgradeAndSell.SetTower(null);
+		this.windowUpgradeAndSell.SetTower(null, null);
 		//this.windowUpgradeAndSell.transform.gameObject.SetActive(false);
 	}
 

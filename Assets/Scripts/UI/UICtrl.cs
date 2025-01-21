@@ -14,6 +14,8 @@ public class UICtrl : TDMonoBehaviour
     [SerializeField] protected PlayerUI playerUI;
     public PlayerUI PlayerUI => playerUI;
     public UpdateAndSellCtrl UpdateAndSellCtrl => updateAndSellCtrl;
+    [SerializeField] protected LevelManager levelManager;
+    public LevelManager LevelManager => levelManager;
 
     protected override void LoadComponents()
     {
@@ -24,9 +26,16 @@ public class UICtrl : TDMonoBehaviour
         this.LoadEnemies();
         this.LoadUpdateAndSellCtrl();
         this.LoadPlayerUI();
-    }
+        this.LoadLevelManager();
+	}
+	protected void LoadLevelManager()
+	{
+		if (this.levelManager != null) return;
+		this.levelManager =GameObject.FindObjectOfType<LevelManager>();
+		Debug.LogWarning(transform.name + ": LoadLevelManager", gameObject);
+	}
 
-    protected void LoadPlayerUI()
+	protected void LoadPlayerUI()
     {
         if (this.playerUI != null) return;
         this.playerUI = transform.GetComponentInChildren<PlayerUI>();
@@ -46,7 +55,6 @@ public class UICtrl : TDMonoBehaviour
         this.enemies = transform.Find("EnemiesAlivePanel").GetComponentInChildren<Enemies>();
         Debug.LogWarning(transform.name + ": LoadEnemies", gameObject);
     }
-
     protected void LoadWave()
     {
         if (this.wave != null) return;
