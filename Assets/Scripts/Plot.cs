@@ -70,6 +70,7 @@ public class Plot : TDMonoBehaviour
         if (this.tower != null)
         {
             this.uICtrl.UpdateAndSellCtrl.gameObject.SetActive(true);
+            this.uICtrl.UpdateAndSellCtrl.SetTower(tower);
         }
 
 

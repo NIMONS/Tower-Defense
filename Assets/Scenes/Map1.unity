@@ -360,7 +360,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &46092662
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3581,7 +3581,7 @@ GameObject:
   - component: {fileID: 587528289}
   - component: {fileID: 587528288}
   - component: {fileID: 587528287}
-  - component: {fileID: 587528286}
+  - component: {fileID: 587528290}
   m_Layer: 5
   m_Name: BtnClose
   m_TagString: Untagged
@@ -3610,19 +3610,6 @@ RectTransform:
   m_AnchoredPosition: {x: -38.57144, y: -38.571426}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &587528286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587528284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb42586a1bb9ed04b929b03d6449c43e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  windowShop: {fileID: 609400040}
 --- !u!114 &587528287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3667,7 +3654,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 587528286}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BtnCloseShopPanel, Assembly-CSharp
         m_MethodName: CloseShopPanel
         m_Mode: 1
@@ -3717,6 +3704,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 587528284}
   m_CullTransparentMesh: 1
+--- !u!114 &587528290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587528284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3cd630544e676e468db576074c7945e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windowUpgradeAndSell: {fileID: 609400042}
 --- !u!1 &602391542
 GameObject:
   m_ObjectHideFlags: 0
@@ -3987,10 +3987,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c60b6b4050e3af041b3bbd3e75e16027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btnCloseShopPanel: {fileID: 587528286}
   btnUpgrade: {fileID: 632137443}
   btnSell: {fileID: 1860694359}
   textCurrentLvTurret: {fileID: 642872341}
+  tower: {fileID: 0}
 --- !u!1 &624620611
 GameObject:
   m_ObjectHideFlags: 0
@@ -5693,7 +5693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb42586a1bb9ed04b929b03d6449c43e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windowShop: {fileID: 313269526}
+  windowShop: {fileID: 0}
 --- !u!114 &955309454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7661,7 +7661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb42586a1bb9ed04b929b03d6449c43e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windowShop: {fileID: 313269526}
+  windowShop: {fileID: 0}
 --- !u!114 &1134967944
 MonoBehaviour:
   m_ObjectHideFlags: 0

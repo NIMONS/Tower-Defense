@@ -5,10 +5,11 @@ using UnityEngine;
 public class UpdateAndSellCtrl : TDMonoBehaviour
 {
     [Header("References")]
-    [SerializeField] protected BtnCloseShopPanel btnCloseShopPanel;
     [SerializeField] protected BtnUpgrade btnUpgrade;
     [SerializeField] protected BtnSell btnSell;
     [SerializeField] protected TextCurrentLvTurret textCurrentLvTurret;
+    [SerializeField] protected GameObject tower;
+    public GameObject Tower => tower;
 
     protected override void Start()
     {
@@ -19,7 +20,6 @@ public class UpdateAndSellCtrl : TDMonoBehaviour
     protected override void LoadComponents()
     {
         base.LoadComponents();
-        this.LoadBtnCloseShopPanel();
         this.LoadBtnUpgrade();
         this.LoadBtnSell();
         this.LoadTextCurrentLvTurret();
@@ -39,17 +39,15 @@ public class UpdateAndSellCtrl : TDMonoBehaviour
         Debug.LogWarning(transform.name + ": LoadBtnSell", gameObject);
     }
 
-    protected void LoadBtnCloseShopPanel()
-    {
-        if (btnCloseShopPanel != null) return;
-        this.btnCloseShopPanel=transform.Find("UpdateAndSell-Image").GetComponentInChildren<BtnCloseShopPanel>();
-        Debug.LogWarning(transform.name + ": LoadBtnCloseShopPanel", gameObject);
-    }
-
     protected void LoadBtnUpgrade()
     {
         if(btnUpgrade != null) return;
         this.btnUpgrade=transform.Find("UpdateAndSell-Image").Find("Upgrade").GetComponentInChildren<BtnUpgrade>();
         Debug.LogWarning(transform.name + ": LoadBtnUpgrade", gameObject);
+    }
+
+    public void SetTower(GameObject tower)
+    {
+        this.tower = tower;
     }
 }

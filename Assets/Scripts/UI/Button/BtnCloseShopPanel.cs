@@ -23,5 +23,6 @@ public class BtnCloseShopPanel : TDMonoBehaviour
     {
         //Debug.Log("Close Shop");
         this.windowShop.gameObject.SetActive(false);
+        //this.windowShop.se
     }
 }
