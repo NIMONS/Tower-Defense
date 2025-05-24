@@ -26,5 +26,6 @@ public class BuildManager : TDMonoBehaviour
     public void SetSelectedTower(int _selectedTower)
     {
         this.selectedTower = _selectedTower;
+        Debug.Log(_selectedTower);
     }
 }

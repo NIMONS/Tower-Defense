@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &856338419255177931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9070734988541723540}
+  m_Layer: 0
+  m_Name: FiringPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9070734988541723540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856338419255177931}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.112, y: 0.325, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8067281141879824877}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &914516653341879695
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,7 +354,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1498495222, guid: a101525ae6bd5014abc58225b5e4c239, type: 3}
+  m_Sprite: {fileID: 1909001434, guid: a101525ae6bd5014abc58225b5e4c239, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -365,6 +396,7 @@ Transform:
   m_Children:
   - {fileID: 5895768412185232124}
   - {fileID: 5794557206099062239}
+  - {fileID: 9070734988541723540}
   m_Father: {fileID: 2224273446152986958}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5745861892334668229
@@ -427,7 +459,7 @@ GameObject:
   - component: {fileID: 7675763180152935817}
   - component: {fileID: 3035374088613762746}
   m_Layer: 0
-  m_Name: Tank
+  m_Name: Tanklv2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -473,9 +505,9 @@ MonoBehaviour:
   tankCtrl: {fileID: 3035374088613762746}
   destroyBullet: {fileID: 3794513695022412968}
   holder: {fileID: 3781619829954751517}
-  targetingRange: 3
-  rotationSpeed: 280
-  bps: 1.25
+  targetingRange: 4
+  rotationSpeed: 320
+  bps: 1.5
 --- !u!114 &3035374088613762746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,7 +547,7 @@ Transform:
   m_GameObject: {fileID: 6767522792824879548}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.325, z: 0}
+  m_LocalPosition: {x: -0.124, y: 0.325, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
